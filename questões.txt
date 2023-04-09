@@ -1,0 +1,68 @@
+1) O valor da variável SOMA será igual a 91.
+indice = 13
+soma = 0
+k = 0
+while(k < indice):
+    k = k + 1
+    soma = soma + k
+print(soma)
+
+2)
+def seq_fibonacci(num):
+    a, b = 0, 1
+    while a <= num:
+        if a == num:
+            return True
+        a, b = b, a + b
+    return False
+
+numero = int(input("Digite um número: "))
+
+if seq_fibonacci(numero):
+    print(f"O número {numero} pertence à sequência de Fibonacci.")
+else:
+    print(f"O número {numero} não pertence à sequência de Fibonacci.")
+    
+3)
+a- 9
+b- 128
+c- 49
+d- 100
+e- 13
+f- 200
+
+4)
+Para calcular o tempo que cada veículo leva para percorrer a distância, podemos usar a fórmula de velocidade média: tempo = distância / velocidade.
+
+Para o carro:
+tempo = 100 km / 110 km/h
+tempo = 0,909 horas
+
+Para o caminhão:
+tempo = 100 km / 80 km/h + (2 x 5 min) / 60 min
+tempo = 1,416 horas
+velocidade = 100 km / 1,416 horas = 70,42 km/h
+
+Eles se cruzam no momento:
+Utilizando S = S0 + V0 x t, temos:
+t = S/v1
+t = S - 100km / -v2
+S/v1 = S - 100km / -v2
+-v2 * S = v1 * S - v1 * 100km
+S = 100km * v1 / (v1 + v2)
+S = 100km * 110km/h / (110km/h + 70,42km/h)
+S = 100km * 110km/h / 180,42km/h
+S = 60,96 km
+
+Portanto, eles se cruzam no km 60,96 no sentido de Franca e neste ponto, eles estão na mesma distância em relação ao Ribeirão Preto.
+
+5)
+def inverte_string(string):
+    string_invertida = ""
+    for i in range(len(string) - 1, -1, -1):
+        string_invertida += string[i]
+    return string_invertida
+
+str = str(input("Digite uma string: "))
+invertida = inverte_string(str)
+print(f"A string invertida é: {invertida}")
